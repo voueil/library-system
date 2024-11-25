@@ -1,7 +1,7 @@
 # library-system
 
 <h3 align="left">I. Project Description</h3>
-\ The Online Library System, developed using the JavaFX API, offers a role-based platform for students, librarians, and administrators. Each user has different services. Users log in with their ID and username, then the system identifies the user by checking the first two digits of the ID: 
+/ The Online Library System, developed using the JavaFX API, offers a role-based platform for students, librarians, and administrators. Each user has different services. Users log in with their ID and username, then the system identifies the user by checking the first two digits of the ID: 
 - If it starts with 11: The user is an Admin.
 -  If it starts with 22: The user is as a Librarian.
 - If it starts with 33: The user is as a Student. 
