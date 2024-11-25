@@ -26,4 +26,4 @@ records, providing an efficient library experience.
 • Compositions: User has a composition relationship with Request, and Request has a composition relationship with Book. 
 
 • Implementation: BookSearch and UserSearch implement the Searchable interface.
-
+<img width="513" alt="Screenshot 2024-11-25 210248" src="https://github.com/user-attachments/assets/85cae5ba-b338-4206-83b5-a95328c950d0">
