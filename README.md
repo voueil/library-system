@@ -29,7 +29,6 @@ has a composition relationship with Book.
 • Implementation: BookSearch and 
 UserSearch implement the Searchable interface.
 
-
 <img width="513" alt="Screenshot 2024-11-25 210248" src="https://github.com/user-attachments/assets/85cae5ba-b338-4206-83b5-a95328c950d0">
 
 <h3 align="left">III. System Hierarchy and Database Schema</h3>
