@@ -30,4 +30,6 @@ records, providing an efficient library experience.
 
 <h3 align="left">III. System Hierarchy and Database Schema</h3>
 <img width="457" alt="Screenshot 2024-11-25 210842" src="https://github.com/user-attachments/assets/642aa92e-4b71-4a87-89c1-35ff7de3c1ed">
+<img width="393" alt="Screenshot 2024-11-25 211437" src="https://github.com/user-attachments/assets/39bea9f8-a9df-4e95-a2ef-9a1c323d5d3f">
+
 
