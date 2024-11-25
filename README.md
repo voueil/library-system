@@ -22,6 +22,9 @@ records, providing an efficient library experience.
 
 <h3 align="left">II. Class Diagram</h3>
 • Inheritance: The super class User has three subclasses: Student, Administrator, and Librarian. 
+
 • Associations: an association relationship between BookSearch and Student, and an association relationship between UserSearch and the Administrator. 
+
 • Compositions: User has a composition relationship with Request, and Request has a composition relationship with Book. 
+
 • Implementation: BookSearch and UserSearch implement the Searchable interface.
