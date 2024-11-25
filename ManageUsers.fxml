@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.432" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManageUsersController">
+   <children>
+      <Label layoutX="220.0" layoutY="14.0" text="Manage Users">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="73.0" text="User ID">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="256.0" layoutY="73.0" text="Username">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="404.0" layoutY="73.0" text="User Role">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font></Label>
+      <VBox fx:id="usersContainer" layoutX="88.0" layoutY="88.0" prefHeight="200.0" prefWidth="408.0" />
+      <Button fx:id="Addbtn" layoutX="183.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleNavigation" text="Add User">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="deleteBtn" layoutX="397.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="26.0" prefWidth="103.0" text="Delete User" textFill="#da1818">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="editBtn" layoutX="299.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="27.0" prefWidth="75.0" text="Edit User">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="backBtn" layoutX="98.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="26.0" prefWidth="55.0" text="Back">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="searchTf" layoutX="98.0" layoutY="290.0" />
+      <Button fx:id="searchBtn" layoutX="299.0" layoutY="290.0" mnemonicParsing="false" onAction="#performSearch" text="Search ID">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="removeBtn" layoutX="397.0" layoutY="290.0" mnemonicParsing="false" onAction="#displayAllUsers" text="Remove Search">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Line endX="100.0" layoutX="292.0" layoutY="49.0" startX="-100.0" />
+      <ImageView fx:id="logoImgView" blendMode="MULTIPLY" fitHeight="114.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

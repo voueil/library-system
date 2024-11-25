@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.432" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminHomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="364.0" layoutX="21.0" layoutY="19.0" stroke="BLACK" strokeType="INSIDE" width="553.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5945419073104858" green="0.7020549178123474" blue="0.8026315569877625" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="198.0" layoutY="52.0" text="Administrator Home">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutBtn" layoutX="47.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleNavigation" text="Log out" textFill="#1975e5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="manageBtn" layoutX="87.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleNavigation" text="Manage Users">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="inventoryBtn" layoutX="227.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleNavigation" text="Oversee Inventory">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="settingsBtn" layoutX="388.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleNavigation" text="Oversee Settings">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <ImageView fx:id="logoImgView" blendMode="MULTIPLY" fitHeight="107.0" fitWidth="78.0" layoutX="20.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

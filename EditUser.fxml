@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.432" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditUserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="346.0" layoutX="33.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" width="530.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.422149121761322" green="0.5779422521591187" blue="0.7236841917037964" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="220.0" layoutY="40.0" prefHeight="39.0" prefWidth="160.0" text="Edit User">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="136.0" text="User ID">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="189.0" layoutY="177.0" text="New ID">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="189.0" layoutY="221.0" text="New Username">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tfOldId" layoutX="286.0" layoutY="132.0" />
+      <TextField fx:id="tfNewId" layoutX="286.0" layoutY="173.0" />
+      <TextField fx:id="tfNewUsername" layoutX="286.0" layoutY="217.0" />
+      <Button fx:id="btnBack" layoutX="189.0" layoutY="292.0" mnemonicParsing="false" onAction="#handleNavigation" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnEdit" layoutX="367.0" layoutY="292.0" mnemonicParsing="false" onAction="#editUser" text="Edit">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label fx:id="msgLabel" layoutX="190.0" layoutY="333.0" prefHeight="17.0" prefWidth="219.0" textAlignment="CENTER" textFill="#6f88da">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="userImgView" blendMode="MULTIPLY" fitHeight="150.0" fitWidth="102.0" layoutX="87.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../user.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logoImgView" blendMode="MULTIPLY" fitHeight="93.0" fitWidth="74.0" layoutX="32.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

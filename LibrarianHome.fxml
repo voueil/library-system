@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.432" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LibrarianHomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="359.0" layoutX="23.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" width="550.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8947368264198303" green="0.7249025106430054" blue="0.7249025106430054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="176.0" layoutY="63.0" text="Librarian Home" textFill="#ae2e14">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBooks" layoutX="165.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleNavigation" text="Manage Books">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnRequests" layoutX="325.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleNavigation" text="Manage Requests">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="logoutBtn" layoutX="39.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleNavigation" text="Log Out" textFill="#901515">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <ImageView fx:id="logoImgView" blendMode="MULTIPLY" fitHeight="76.0" fitWidth="74.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
