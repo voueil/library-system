@@ -10,13 +10,11 @@ The Online Library System, developed using the JavaFX API, offers a role-based p
 • If it starts with 33: The user is as a Student. 
 
 Other than that an error message will appear, each user has a personalized homepage: 
-
 • Admins can manage users, oversee inventory, adjust settings, and log out. 
 
 • Librarians can manage books, track inventory, handle loan requests, and log out. 
 
 • Students can browse, borrow, and return books, check their account details, and log out. 
-
 the system is backed by a Oracle SQL database to ensure secure storage of user data and book 
 records, providing an efficient library experience.
 
